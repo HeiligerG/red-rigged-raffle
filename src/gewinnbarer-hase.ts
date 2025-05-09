@@ -1,4 +1,4 @@
-export class GewinnbarerHase {
+export class Gewinn {
   constructor(
     private derHase: string,
     private derZahlenmässigeHase: number,

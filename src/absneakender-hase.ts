@@ -1,9 +1,9 @@
-import { GewinnbarerHase } from "./gewinnbarer-hase";
+import { Gewinn } from "./gewinnbarer-hase";
 
 export class AbsneakenderHase {
   constructor(
     private brokieMokies: string[],
-    private gewinnbareHasen: GewinnbarerHase[],
+    private gewinnbareHasen: Gewinn[],
   ) {}
 
   public absneaken(): Map<string, string> {

@@ -1,5 +1,5 @@
 import { AbsneakenderHase } from "./absneakender-hase.js";
-import { GewinnbarerHase } from "./gewinnbarer-hase.js";
+import { Gewinn } from "./gewinnbarer-hase.js";
 
 export class Verlosung {
   public main() {
@@ -39,12 +39,12 @@ export class Verlosung {
       "@LeonMachere",
     ];
     const fiktivePreise = [
-      new GewinnbarerHase("iPhone 16 Pro", 1),
-      new GewinnbarerHase("Trip nach Dubi", 1),
-      new GewinnbarerHase("Stepper nach Isti", 1),
-      new GewinnbarerHase("10 kg Haribo", 2),
-      new GewinnbarerHase("PlayStation 5 Slim", 3),
-      new GewinnbarerHase("gebrauchte Sneaker", 5),
+      new Gewinn("iPhone 16 Pro", 1),
+      new Gewinn("Trip nach Dubi", 1),
+      new Gewinn("Stepper nach Isti", 1),
+      new Gewinn("10 kg Haribo", 2),
+      new Gewinn("PlayStation 5 Slim", 3),
+      new Gewinn("gebrauchte Sneaker", 5),
     ];
     const luckyMuckies = new AbsneakenderHase(
       redArmy,

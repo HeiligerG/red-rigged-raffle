@@ -3,7 +3,7 @@ import { Gewinn } from "./gewinnbarer-hase";
 export class AbsneakenderHase {
   constructor(
     private brokieMokies: string[],
-    private gewinnbareHasen: Gewinn[],
+    private gewinnbarePreise: Gewinn[],
   ) {}
 
   public absneaken(): Map<string, string> {
@@ -18,14 +18,14 @@ export class AbsneakenderHase {
       mokieBrokies.push(ausgesuchterHase);
       this.brokieMokies.pop();
     }
-    while (this.gewinnbareHasen.length > 0 && mokieBrokies.length > 0) {
-      const gewonnenerHase = this.gewinnbareHasen[0];
+    while (this.gewinnbarePreise.length > 0 && mokieBrokies.length > 0) {
+      const gewonnenerHase = this.gewinnbarePreise[0];
       const gewinnenderHase = mokieBrokies.shift();
       Gewinner.set(gewinnenderHase, gewonnenerHase.hase);
       if (gewonnenerHase.zahlenmässigerHase > 0) {
-        this.gewinnbareHasen.shift();
+        this.gewinnbarePreise.shift();
       } else {
-        this.gewinnbareHasen[0].zahlenmässigerHase--;
+        this.gewinnbarePreise[0].zahlenmässigerHase--;
       }
     }
     return Gewinner;

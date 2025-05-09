@@ -1,7 +1,7 @@
 export class Gewinn {
   constructor(
     private derHase: string,
-    private derZahlenmässigeHase: number,
+    private anzahlGewinner: number,
   ) {}
 
   public get hase(): string {
@@ -9,10 +9,10 @@ export class Gewinn {
   }
 
   public get zahlenmässigerHase(): number {
-    return this.derZahlenmässigeHase;
+    return this.anzahlGewinner;
   }
 
   public set zahlenmässigerHase(neuerHase: number) {
-    this.derZahlenmässigeHase = neuerHase;
+    this.anzahlGewinner = neuerHase;
   }
 }
